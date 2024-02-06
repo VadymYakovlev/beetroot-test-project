@@ -1,62 +1,126 @@
 <!DOCTYPE html>
 <html lang="ua">
   <head>
-    <title>моє резюме</title>
+    <!-- * TITLE -->
+    <title>Резюме</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="/homeworks/firstwebsiteua/css/style.css" />
+
+    <!-- * STYLES -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="/homeworks/styles/normalize.css" />
+    <!-- Main  -->
+    <link rel="stylesheet" href="/homeworks/styles/mian.css" />
   </head>
 
   <body>
-    <div>
-      <!-- My info -->
-      <h1>Вадим Яковлев</h1>
-      <p><em>Я хочу стати Фронт-Енд розробником</em></p>
-
-      <!-- Work exp -->
-      <h3>Досвід роботи</h3>
-
-      <!-- Company 1 -->
-      <div>
-        <h4>Команда технічної підтримки Umbrella Corporation </h4>
-        <p>Листопад 2019 - по сьогодні | Полтава</p>
-        <ul>
-          <li>Підтримка веб-сайтів, мобільного додатку, Бізнес-кабінету, АРІ документація </li>
-          <li>Підтримкка Клієнтів і рішення різних ситуацій</li>
-          <li>Тестування мобільного додатку, нового функціоналу, аналіз помилок та звітність</li>
-          <li>Пошук рішень та створення задач</li>
-        </ul>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Main content -->
+      <div class="main-content">
+        <!-- My info -->
+        <div class="my-info">
+          <h1 class="my-name">Вадим Яковлев</h1>
+          <header class="my-description">
+            <em>Я хочу стати Фронт-Енд розробником</em>
+          </header>
+        </div>
+        <!-- Work exp -->
+        <div class="work-experience">
+          <h3 class="work-experience-title">Досвід роботи</h3>
+          <!-- Company 1 -->
+          <div class="work-experience-container">
+            <h4 class="work-experience-company">
+              Команда технічної підтримки
+              <span class="company-name">Umbrella Corporation</span>
+            </h4>
+            <p class="work-experience-period">
+              Листопад 2019 - по сьогодні | Полтава
+            </p>
+            <ul class="work-experience-duties-list">
+              <li class="work-experience-duties-item">
+                Підтримка веб-сайтів, мобільного додатку, Бізнес-кабінету, АРІ
+                документація
+              </li>
+              <li class="work-experience-duties-item">
+                Підтримкка Клієнтів і рішення різних ситуацій
+              </li>
+              <li>
+                Тестування мобільного додатку, нового функціоналу, аналіз
+                помилок та звітність
+              </li>
+              <li class="work-experience-duties-item">
+                Пошук рішень та створення задач
+              </li>
+            </ul>
+          </div>
+          <!-- Company 2 -->
+          <div class="work-experience-container">
+            <h4 class="work-experience-company">
+              Логіст <span class="company-name">Fragile Express</span>
+            </h4>
+            <p class="work-experience-period">Листопад 2013 - 2019 | Полтава</p>
+            <ul class="work-experience-duties-list">
+              <li class="work-experience-duties-item">
+                Контроль і моніторинг автомобілів, вибуття-прибуття
+              </li>
+              <li class="work-experience-duties-item">
+                Планування автотранспорту
+              </li>
+              <li class="work-experience-duties-item">
+                Вирішення нестандартних ситуацій, комунікація з водіями
+                транспортних засобів
+              </li>
+              <li class="work-experience-duties-item">
+                Розробка заходів щодо зменшення кількості запізнілих автомобілів
+              </li>
+            </ul>
+          </div>
+          <!-- Education -->
+          <div class="Education-container">
+            <h3 class="Education-title">Освіта</h3>
+            <p class="Education-company">
+              Полтавський університет економіки та торгівлі
+            </p>
+            <p class="Profession">
+              Фінанси та облік - бакалавр, Бізнес-адміністрування - магістр
+            </p>
+            <p class="education-period">
+              Вересень 2007 - Червень 2011, Вересень 2011 - Червень 2013 |
+              Полтава
+            </p>
+          </div>
+        </div>
       </div>
-
-      <!-- Company 2 -->
-      <div>
-        <h4>Логіст Fragile Express</h4>
-        <p>Листопад  2013 - 2019 | Полтава</p>
-        <ul>
-          <li>Контроль і моніторинг автомобілів, вибуття-прибуття</li>
-          <li>Планування автотранспорту</li>
-          <li>Вирішення нестандартних ситуацій, комунікація з водіями транспортних засобів</li>
-          <li>Розробка заходів щодо зменшення кількості запізнілих автомобілів</li>
-        </ul>
-      </div>
-
-      <!-- Education -->
-      <div>
-        <h3>Освіта</h3>
-        <p>Полтавський університет економіки та торгівлі</p>
-        <p>Фінанси та облік - бакалавр, Бізнес-адміністрування - магістр</p>
-        <p>Вересень 2007 - Червень 2011, Вересень 2011 - Червень 2013 | Україна Полтава</p>
-      </div>
-
-      <!-- Contacts -->
-      <div>
-        <div><img src="img/image.png" alt="My photo" width="200" /></div>
-        <h3>Мої контакти</h3>
-        <li>E: <a href="v266289896@gmail.com">v266289896@gmail.com</a></li>
-        <li>C: <a href="tel:+380951505220">+380951505220</a></li>
-        <li>FB: <a href="http://tinyurl.com/vadymyakovlev" target="_blank">Vadym Yakovlev</a>
-        </li>
-      </div>
-
-
-
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img class="profile-image" src="img/image.png" alt="My photo" />
+        <div class="sidebar-content">
+          <!-- Contacts -->
+          <footer class="contacts-container">
+            <h6 class="contacts-title">Contacts</h6>
+            <p class="contacts-item">
+              E:<a class="contacts-link" href="v266289896@gmail.com"
+                >v266289896@gmail.com</a
+              >
+            </p>
+            <p class="contacts-item">
+              C:
+              <a class="contacts-link" href="tel:+380951505220"
+                >+380951505220</a
+              >
+            </p>
+            <p class="contacts-item">
+              FB:<a
+                class="contacts-link"
+                href="http://tinyurl.com/vadymyakovlev"
+                target="_blank"
+                >Vadym Yakovlev</a
+              >
+            </p>
+          </footer>
+        </div>
+      </aside>
     </div>
   </body>
 </html>
