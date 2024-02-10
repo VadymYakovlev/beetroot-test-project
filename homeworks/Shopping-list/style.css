@@ -1,0 +1,124 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+/* Main */
+body {
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+.header {
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: #4a4f56;
+text-align: center;
+color: #FF8984;
+margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Blocks */
+
+.blocks {
+  margin: 20px auto;
+  /* padding: 20px; */
+  width: 200px;
+  gap: 20px;
+  width: 534px;
+height: 45px;
+top: 102px;
+left: 129px;
+margin: 0 auto;
+}
+
+.block {
+  background-color: #88839e;
+  transition: background-color 0,35s ease-in;
+  color: white;
+  width: 534px;
+  height: 45px;
+  top: 102px;
+  left: 129px;
+}
+
+/* List */
+
+.list {
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.list-label {
+  display: flex;
+  padding: 10px;
+gap: 10px;
+align-items: center;
+border-top: 2px solid transparent;
+border-bottom: 2px solid transparent;
+}
+
+.button-label {
+  padding: 4px;
+  align-items: center;
+}
+
+.list-content {
+  text-align: center;
+}
+
+.list-label:hover {
+  border-color: white;
+}
+
+.list-item {
+  background-color: #88839e;
+}
+
+.list-item:nth-child(2n)  {
+  background-color: #6f6f7c;
+}
+
+.list-item:nth-child(7n) {
+  background-color: #4a4f56;
+  margin-top: 50px;
+  text-align: center;
+  color: #FF8984;
+}
+
+.list-checkbox:checked + .list-content {
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
