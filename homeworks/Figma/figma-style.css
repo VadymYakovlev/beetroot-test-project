@@ -97,7 +97,7 @@ padding-top: 16px;
   padding-left: 200px;
 }
 
-.btn-sign-in {
+.btn-sign-in  {
   background-color: white;
   color: #2F281E;
   font-weight: bold;
@@ -110,20 +110,21 @@ padding-top: 16px;
 .btn-sign-up {
   background-color: #FF9900;
   color: white;
-  border: none;
-  padding: 10px 20px;
+  text-align: center;
   border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
+  padding: 10px 20px;
+  padding: 10px 20px;
+  border: none;
 }
 
 .btn-get-started {
   background-color: #FF9900;
   color: white;
-  border: none;
-  padding: 10px 20px;
+  text-align: center;
   border-radius: 5px;
-  width: 140px;
   font-size: 16px;
-  font-weight: bold;
+  padding: 10px 20px;
+  padding: 10px 20px;
+  border: none;  /* Якщо відкл буде активність кнопки + кордони. Як зробити активність та прибрати кордони? */
 }
