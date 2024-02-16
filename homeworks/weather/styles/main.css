@@ -1,0 +1,25 @@
+/* **Global */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #2B81AC; 
+  font-size: var(--fs-base);
+  font-family: var(--f-base);
+  height:100vh;
+}
+
+p {
+color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}

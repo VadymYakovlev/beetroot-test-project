@@ -1,117 +1,92 @@
-/* **Global */
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-    border: 1px solid red;
-}
-
-body {
-  font-size: 16px;
-  min-height:100vh;
-  background-color: lightgrey;
-  max-width: 100%;
-}
-
-.wrapper {
-  height: 150vh;
-}
-
-
 /* *Main */
 
 .main {
   margin-top: 100px;
   border: 20px;
-  width: 1440px;
+  font-size: 22px;
+  color: var(--c-primary);
+  /* border: 5px solid red; */
+  
+}
+.main-title {
+  padding-left: 360px;
+}
+
+/* *Main*/
+
+.weather-table {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
-  display: flex;
-  align-items: center; 
-  
-}
-
-.container-string {
-display: flex;
-margin: 0 auto;
-}
-
-.container-title {
-  width: 300px;
-  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid var(--c-primary);
+  color: var(--c-primary);
   text-align: center;
-  font-size: 21px;
-  color: white;
-  font-family: Lucida Sans Unicode;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  } 
+
+  /* Blocks */
+
+.block {
+  width: 25%;
+  padding: 25px;
+  border: 1px solid var(--c-primary);
+  background-color: #71b8db;
+  transition: 0.3s ease;
 }
 
-
-.main-container {
-  box-sizing: border-box;
-  padding-right: 80px;
-  padding-left: 80px;
-  
+.block--middle {
+  width: 50%;
 }
 
-.main-container {
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  margin-top: 50px;
-  margin: 0 auto;
-  background-color:  #3399CC;  
-  border: 20px solid #2B81AC; 
-
-  
+.block--big {
+  width: 100%;
+  background-color: #66669966;
+}
+.block--middle--extra {
+  background-color: #CC6699;
+}
+.block--teal {
+  background-color: #33CCCC;
+}
+.block--purple {
+background-color: #996699;
+}
+.block--rose {
+  background-color: #C24747;
+} 
+.block--carrot {
+background-color: #E2674A;
+}
+.block--yellow {
+  background-color: #FFCC66
+  ;
+}
+.block--palette {
+  background-color: #99CC99;
+}
+.block--grey {
+  background-color: #669999;
+}
+.block--green {
+  background-color: #339966;
 }
 
-.main-container2 {
-  margin: 0 auto;
-  width: 1440px;
-  height: 900px; 
-  background-color:  #3399CC;  
-  border: 20px solid #2B81AC; 
-  box-sizing: border-box; 
-  display: flex;
-  height: 100vh; 
+.title {
+  margin-bottom: 10px;
 }
 
-
-.middle-container {
-  height: 150px;
-  width: 580px;
-  box-sizing: border-box;
-  /* border-color: 5 solid red; */
-  border: 5px solid white;
-}
-.small-container {
-  height: 150px;
-  width: 290px;
-  box-sizing: border-box;
-  border: 5px solid white;
-}
-
-.large-container {
-  height: 150px;
-  width: 1160px;
-  border: 5px solid white;
-}
-
-/* Content */
-.content-Lisbon {
-  align-items: center;
-  background:#71b8db;
-}
-
-.content-Paris {
-background: #33CCCC;
-}
-
-.text-container {
-  color: white;
-}
-
-/* .middle-container:hover {
+.weather-table .block:hover {
   border-color: blue;
-} */
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* *Footer */
+
+.footer-text {
+  font-size: 16px;
+  color: white;
+  padding-left: 360px;
+  padding-top: 35px;
+}
