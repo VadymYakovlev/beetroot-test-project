@@ -1,0 +1,32 @@
+.banner {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &-wrapper {
+      align-items: center;
+      gap: 55px;
+      display: flex;
+    }
+
+    &-content {
+      max-width: 500px;
+      width: 100%;
+    }
+
+  &-image-block {
+  width: 100%;
+  }
+
+  &-text {
+  font-size: 1, 125em;
+  }
+  &-button {
+  margin-top: 20px;
+  }
+
+}
+
+

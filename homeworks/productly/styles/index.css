@@ -1,0 +1,119 @@
+/* *** Header */
+
+.header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: flex;
+}
+
+.header-buttons {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+/* * Logo */
+.logo {
+  max-width: fit-content;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  height: fit-content;
+}
+
+/** Navigation */
+.nivagation-list {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.nivagation-link {
+  padding: 10px;
+  display: flex;
+}
+
+/* a:hover {
+  color: red;
+} */
+
+/* *Button */
+
+.button {
+  justify-content: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #ff9900;
+  color: white;
+  border: 1px solid #ff9900;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(#2f281e);
+}
+
+.button:hover {
+  background-color: var(--c-black);
+  border-color: var(--c-black);
+  color: var(--c-white);
+}
+
+.button--white {
+  border-color: gray;
+  background-color: white;
+  color: var(--c-black);
+}
+
+.button--large {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* * Banner */
+
+.banner {
+  min-height: calc(100vh-80px);
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.banner-wrapper {
+  align-items: center;
+  gap: 55px;
+  display: flex;
+}
+
+.banner-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.banner-image-block {
+  width: 100%;
+}
+
+.banner-image-block {
+  width: 100%;
+}
+
+.banner-text {
+  /* margin-top: 30px; */
+  font-size: 1, 125em;
+}
+
+.banner-button {
+  margin-top: 20px;
+}
