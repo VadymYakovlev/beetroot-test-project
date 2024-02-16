@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- * Title -->
     <title>Weather</title>
-    <link rel="shortcut icon" href="./favicon-forecast.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./favicon-forecast.ico"
+      type="image/x-icon"
+    />
     <!-- * STYLES -->
     <!-- Variables -->
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -18,78 +22,74 @@
   <body>
     <div class="app">
       <!-- *Header -->
-      <a href="../../index.html">HOME</a>
+      <header class="header">
+        <a href="../../index.html">HOME</a>
+      </header>
 
-      <div class="Header">
+      <!--** Main -->
+      <main class="main">
+        <div class="main-title">
+          CSS Weather Forecast
+          <img src="./img/titleicon.png" alt="title-icon" />
+        </div>
 
-
-        <!--** Main -->
-        <main class="main">
-
-          <div class="main-title">CSS Weather Forecast
-            <img src="./img/titleicon.png" alt="title-icon">
+        <!-- Weather-table -->
+        <div class="weather-table">
+          <div class="block block--middle">
+            <div class="title">Lisbon</div>
+            <div>21 °C <img src="./img/lisbon.png" alt="Forecast" /></div>
           </div>
-
-          <!-- Weather-table -->
-          <div class="weather-table">
-            <div class="block block--middle">
-              <div class="title">Lisbon</div>
-              <div>21 °C <img src="./img/lisbon.png" alt="Forecast">
-              </div>
-            </div>
-            <div class="block block--teal">
-              <div class="title">Paris</div>
-              <div>11 °C<img src="./img/paris.png" alt="Paris">
-              </div>
-            </div>
-            <div class="block block--purple">
-              <div class="title">Belgrade</div>
-              <div>15 °C <img src="./img/belgrade.png" alt="Belgrade">
-              </div>
-            </div>
-            <div class="block block--rose">
-              <div class="title">Venice</div>
-              <div>21 °C <img src="./img/venice.png" alt="Venice">  <img src="./img/cursor.png" alt="cursor"></div>
-
-            </div>
-            <div class="block block--carrot">
-              <div class="title">Tel-Avie</div>
-              <div>32 °C <img src="./img/tel.png" alt="Tel-Avie"></div>
-            </div>
-            <div class="block block--yellow">
-              <div class="title">Cair</div>
-              <div>21 °C <img src="./img/cair.png" alt="Cair"></div>
-            </div>
-            <div class="block block--palette">
-              <div class="title">New York</div>
-              <div>17 °C <img src="./img/ny.png" alt="NY"></div>
-            </div>
-            <div class="block block--grey">
-              <div class="title">New-Deihi</div>
-              <div>17 °C <img src="./img/nd.png" alt="New-Deihi"></div>
-            </div>
-            <div class="block block--middle block--middle--extra">
-              <div class="title">San Francisco</div>
-              <div>15 °C <img src="./img/sf.png" alt="San-Francisco"></div>
-            </div>
-            <div class="block block--green">
-              <div class="title">Tokyo</div>
-              <div>8 °C <img src="./img/tokyo.png" alt="Tokyo"></div>
-            </div>
-            <div class="block block--big">
-              <div class="title">Sydney</div>
-              <div>25 °C <img src="./img/sydney.png" alt="Sydney"></div>
+          <div class="block block--teal">
+            <div class="title">Paris</div>
+            <div>11 °C<img src="./img/paris.png" alt="Paris" /></div>
+          </div>
+          <div class="block block--purple">
+            <div class="title">Belgrade</div>
+            <div>15 °C <img src="./img/belgrade.png" alt="Belgrade" /></div>
+          </div>
+          <div class="block block--rose">
+            <div class="title">Venice</div>
+            <div>
+              21 °C <img src="./img/venice.png" alt="Venice" />
+              <img src="./img/cursor.png" alt="cursor" />
             </div>
           </div>
-        </main>
+          <div class="block block--carrot">
+            <div class="title">Tel-Avie</div>
+            <div>32 °C <img src="./img/tel.png" alt="Tel-Avie" /></div>
+          </div>
+          <div class="block block--yellow">
+            <div class="title">Cair</div>
+            <div>21 °C <img src="./img/cair.png" alt="Cair" /></div>
+          </div>
+          <div class="block block--palette">
+            <div class="title">New York</div>
+            <div>17 °C <img src="./img/ny.png" alt="NY" /></div>
+          </div>
+          <div class="block block--grey">
+            <div class="title">New-Deihi</div>
+            <div>17 °C <img src="./img/nd.png" alt="New-Deihi" /></div>
+          </div>
+          <div class="block block--middle block--middle--extra">
+            <div class="title">San Francisco</div>
+            <div>15 °C <img src="./img/sf.png" alt="San-Francisco" /></div>
+          </div>
+          <div class="block block--green">
+            <div class="title">Tokyo</div>
+            <div>8 °C <img src="./img/tokyo.png" alt="Tokyo" /></div>
+          </div>
+          <div class="block block--big">
+            <div class="title">Sydney</div>
+            <div>25 °C <img src="./img/sydney.png" alt="Sydney" /></div>
+          </div>
+        </div>
+      </main>
 
-<footer class="footer-text">
-  <div>
-    Have a nice day and don't forget umbrella if you are in New Delhi now!
-  </div>
-</footer>
-
-      </div>
+      <footer class="footer-text">
+        <div>
+          Have a nice day and don't forget umbrella if you are in New Delhi now!
+        </div>
+      </footer>
     </div>
   </body>
 </html>

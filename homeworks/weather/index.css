@@ -5,11 +5,16 @@
   border: 20px;
   font-size: 22px;
   color: var(--c-primary);
-  /* border: 5px solid red; */
-  
 }
+
 .main-title {
   padding-left: 360px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: #3399CC;
 }
 
 /* *Main*/
@@ -32,7 +37,7 @@
   width: 25%;
   padding: 25px;
   border: 1px solid var(--c-primary);
-  background-color: #71b8db;
+  background-color:  #71b8db;
   transition: 0.3s ease;
 }
 
