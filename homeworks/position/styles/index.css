@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+  /* height: 100vh; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  height: 700px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  transition: transform 0.5s ease;
+}
+
+/* *Lines */
+.line {
+  position: absolute;
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: #f1f1f1;
+}
+
+.line--45 {
+  transform: rotate(45deg);
+  height: 2px;
+  background-color: #f1f1f1;
+}
+
+.line--90 {
+  transform: rotate(90deg);
+  height: 2px;
+  background-color: #f1f1f1;
+}
+
+.line--135 {
+  transform: rotate(135deg);
+  height: 2px;
+  background-color: #f1f1f1;
+}
+
+/* *Circles */
+
+.circle-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  border: 12px solid #480e63;
+}
+
+.circle-medium {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #480e63;
+  border: 12px solid #290148;
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #480e63;
+  border: 12px solid #fff;
+  border-radius: 50%;
+}
+
+.main-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  border: 12px solid #480e63;
+}
+
+.inner {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 12px solid #480e63;
+  background-color: #290148;
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 12px solid #480e63;
+  border-radius: 50%;
+}
+
+/* Circles XYZ */
+
+.circle--top {
+  top: 0;
+  position: absolute;
+}
+
+.circle--top-right {
+  top: 90px;
+  right: 90px;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+.circle--top-left {
+  top: 90px;
+  left: 90px;
+  position: absolute;
+}
+
+.circle--left {
+  left: 0;
+  position: absolute;
+}
+
+.circle--right {
+  right: 0;
+  position: absolute;
+}
+.circle--bottom {
+  bottom: 0;
+  position: absolute;
+}
+.circle--bottom-left {
+  bottom: 90px;
+  left: 90px;
+  position: absolute;
+}
+.circle--bottom-right {
+  bottom: 90px;
+  right: 90px;
+  position: absolute;
+}
+
+/* Circle effects */
+
+.circle-medium:active {
+  transform: scale(1.9);
+}
+.circle-medium:active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsANhJ29_ulhSkFZAVr56aDzaYXrgZKRdYZ71eanfcwXb8OekJ1AVnP1ABb3WqtQRVp5Q&usqp=CAU"); /* Шлях до зображення */
+  background-size: cover;
+}
+
+/* Direction 50% */
+
+.circle--right:hover {
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--left:hover {
+  transform: translateX(50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--top:hover {
+  transform: translateY(50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--top-left:hover {
+  transform: translate(30%, 30%);
+  transition: transform 0.5s ease;
+}
+.circle--top-right:hover {
+  transform: translate(-30%, 30%);
+  transition: transform 0.5s ease;
+}
+
+.circle--bottom:hover {
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--bottom-right:hover {
+  transform: translate(-30%, -30%);
+  transition: transform 0.5s ease;
+}
+
+.circle--bottom-left:hover {
+  transition: transform 0.5s ease;
+  transform: translate(30%, -30%);
+}
+
+.wrapper:hover {
+  transform: rotate(360deg); /* Обертання на 360 градусів при наведенні */
+}
