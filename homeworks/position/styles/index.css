@@ -5,8 +5,15 @@
 }
 
 body {
-  background-color: #000;
+  background-color: var(--c-bg);
   /* height: 100vh; */
+}
+
+.header {
+  min-height: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
@@ -19,7 +26,7 @@ body {
   margin: 0 auto;
   position: relative;
 
-  transition: transform 0.5s ease;
+  transition: transform 10s ease;
 }
 
 /* *Lines */
@@ -27,25 +34,25 @@ body {
   position: absolute;
   width: calc(100% - 100px);
   height: 2px;
-  background-color: #f1f1f1;
+  background-color: var(--c-white);
 }
 
 .line--45 {
   transform: rotate(45deg);
   height: 2px;
-  background-color: #f1f1f1;
+  background-color: var(--c-white);
 }
 
 .line--90 {
   transform: rotate(90deg);
   height: 2px;
-  background-color: #f1f1f1;
+  background-color: var(--c-white);
 }
 
 .line--135 {
   transform: rotate(135deg);
   height: 2px;
-  background-color: #f1f1f1;
+  background-color: var(--c-white);
 }
 
 /* *Circles */
@@ -58,8 +65,8 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #f1f1f1;
-  border: 12px solid #480e63;
+  background-color: var(--c-white);
+  border: 12px solid var(--c-bc);
 }
 
 .circle-medium {
@@ -67,7 +74,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #480e63;
+  background-color: var(--c-bc);
   border: 12px solid #290148;
   z-index: 2;
 }
@@ -76,8 +83,8 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: #480e63;
-  border: 12px solid #fff;
+  background-color: var(--c-bc);
+  border: 12px solid var(--c-white);
   border-radius: 50%;
 }
 
@@ -88,7 +95,7 @@ body {
   position: relative;
   width: 300px;
   height: 300px;
-  background-color: #f1f1f1;
+  background-color: var(--c-white);
   border-radius: 50%;
   border: 12px solid #480e63;
 }
@@ -107,8 +114,8 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: yellow;
-  border: 12px solid #480e63;
+  background-color: #480e63;
+  border: 12px solid var(--c-white);
   border-radius: 50%;
 }
 
