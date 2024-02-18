@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 
-.wrapper {
+.blocks {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ body {
   margin: 0 auto;
   position: relative;
 
-  transition: transform 10s ease;
+  transition: transform 2.9s ease;
 }
 
 /* *Lines */
@@ -41,18 +41,21 @@ body {
   transform: rotate(45deg);
   height: 2px;
   background-color: var(--c-white);
+  position: absolute;
 }
 
 .line--90 {
   transform: rotate(90deg);
   height: 2px;
   background-color: var(--c-white);
+  position: absolute;
 }
 
 .line--135 {
   transform: rotate(135deg);
   height: 2px;
   background-color: var(--c-white);
+  position: absolute;
 }
 
 /* *Circles */
@@ -76,38 +79,9 @@ body {
   border-radius: 50%;
   background-color: var(--c-bc);
   border: 12px solid #290148;
-  z-index: 2;
-}
-
-.circle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: var(--c-bc);
-  border: 12px solid var(--c-white);
-  border-radius: 50%;
-}
-
-.main-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-color: var(--c-white);
-  border-radius: 50%;
-  border: 12px solid #480e63;
-}
-
-.inner {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 12px solid #480e63;
-  background-color: #290148;
-  z-index: 2;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 2s ease;
 }
 
 .circle {
@@ -117,6 +91,8 @@ body {
   background-color: #480e63;
   border: 12px solid var(--c-white);
   border-radius: 50%;
+
+  transition: transform 2s ease;
 }
 
 /* Circles XYZ */
@@ -130,7 +106,6 @@ body {
   top: 90px;
   right: 90px;
   position: absolute;
-  transition: transform 0.5s ease;
 }
 .circle--top-left {
   top: 90px;
@@ -166,6 +141,7 @@ body {
 
 .circle-medium:active {
   transform: scale(1.9);
+  transition: transform 0.6s ease;
 }
 .circle-medium:active::after {
   content: "";
@@ -176,11 +152,20 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsANhJ29_ulhSkFZAVr56aDzaYXrgZKRdYZ71eanfcwXb8OekJ1AVnP1ABb3WqtQRVp5Q&usqp=CAU"); /* Шлях до зображення */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsANhJ29_ulhSkFZAVr56aDzaYXrgZKRdYZ71eanfcwXb8OekJ1AVnP1ABb3WqtQRVp5Q&usqp=CAU");
   background-size: cover;
 }
 
-/* Direction 50% */
+.circle-main:active ~ .circle {
+  transform: rotate(360deg);
+  transition: transform 0.2s ease;
+}
+
+.blocks:active {
+  transform: rotate(180deg);
+}
+
+/* Direction Circles 50% */
 
 .circle--right:hover {
   transform: translateX(-50%);
@@ -217,10 +202,10 @@ body {
 }
 
 .circle--bottom-left:hover {
-  transition: transform 0.5s ease;
   transform: translate(30%, -30%);
+  transition: transform 0.5s ease;
 }
 
-.wrapper:hover {
-  transform: rotate(360deg); /* Обертання на 360 градусів при наведенні */
-}
+/* .circle {
+  transform: rotate(360deg);
+} */
