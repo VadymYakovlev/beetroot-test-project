@@ -81,7 +81,7 @@ body {
   border: 12px solid #290148;
   z-index: 1;
   cursor: pointer;
-  transition: transform 2s ease;
+  transition: transform 15s ease;
 }
 
 .circle {

@@ -14,7 +14,7 @@
 /* Header */
 .header {
   width: 100%;
-  background-color: #3399CC;
+  background-color: #3399cc;
 }
 
 /* *Main*/
@@ -29,16 +29,23 @@
   color: var(--c-primary);
   text-align: center;
   margin-top: 35px;
-  } 
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
 
-  /* Blocks */
+.block:hover {
+  opacity: 1;
+  filter: none;
+}
+
+/* Blocks */
 
 .block {
   width: 25%;
   padding: 25px;
   border: 1px solid var(--c-primary);
-  background-color:  #71b8db;
-  transition: 0.3s ease;
+  background-color: #71b8db;
+  transition: 0.6s ease;
+  opacity: 0.5;
 }
 
 .block--middle {
@@ -50,26 +57,25 @@
   background-color: #66669966;
 }
 .block--middle--extra {
-  background-color: #CC6699;
+  background-color: #cc6699;
 }
 .block--teal {
-  background-color: #33CCCC;
+  background-color: #33cccc;
 }
 .block--purple {
-background-color: #996699;
+  background-color: #996699;
 }
 .block--rose {
-  background-color: #C24747;
-} 
+  background-color: #c24747;
+}
 .block--carrot {
-background-color: #E2674A;
+  background-color: #e2674a;
 }
 .block--yellow {
-  background-color: #FFCC66
-  ;
+  background-color: #ffcc66;
 }
 .block--palette {
-  background-color: #99CC99;
+  background-color: #99cc99;
 }
 .block--grey {
   background-color: #669999;
@@ -94,4 +100,19 @@ background-color: #E2674A;
   color: white;
   padding-left: 360px;
   padding-top: 35px;
+}
+
+.object {
+  transition: opacity 0.5s ease, filter 0.5s ease; /* Додаємо плавний перехід для зміни прозорості та чіткості */
+}
+
+/* Застосовуємо прозорість до об'єкта */
+.object {
+  opacity: 0.5; /* Додаємо прозорість до об'єкта */
+}
+
+/* При наведенні, змінюємо чіткість */
+.object:hover {
+  opacity: 1; /* Збільшуємо прозорість об'єкта при наведенні */
+  filter: none; /* Відміняємо фільтр, щоб об'єкт став більш чітким */
 }
