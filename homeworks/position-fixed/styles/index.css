@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--c-bg);
+  height: 100vh;
+}
+
+.header {
+  min-height: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  height: 700px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  transition: transform 2.9s ease;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.content {
+  height: 700px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  transition: transform 4s ease-in-out;
+}
+
+/* *Lines */
+.line {
+  position: absolute;
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: var(--c-white);
+}
+
+.line--45 {
+  transform: rotate(45deg);
+  height: 2px;
+  background-color: var(--c-white);
+  position: absolute;
+}
+
+.line--90 {
+  transform: rotate(90deg);
+  height: 2px;
+  background-color: var(--c-white);
+  position: absolute;
+}
+
+.line--135 {
+  transform: rotate(135deg);
+  height: 2px;
+  background-color: var(--c-white);
+  position: absolute;
+}
+
+/* Circles XYZ */
+
+.circle--top {
+  top: 0;
+  position: absolute;
+}
+
+.circle--top-right {
+  top: 90px;
+  right: 90px;
+  position: absolute;
+}
+.circle--top-left {
+  top: 90px;
+  left: 90px;
+  position: absolute;
+}
+
+.circle--left {
+  left: 0;
+  position: absolute;
+}
+
+.circle--right {
+  right: 0;
+  position: absolute;
+}
+.circle--bottom {
+  bottom: 0;
+  position: absolute;
+}
+.circle--bottom-left {
+  bottom: 90px;
+  left: 90px;
+  position: absolute;
+}
+.circle--bottom-right {
+  bottom: 90px;
+  right: 90px;
+  position: absolute;
+}
+
+/* Circle effects */
+
+.circle-medium:active {
+  transform: scale(1.9);
+  transition: transform 0.6s ease;
+}
+.circle-medium:active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsANhJ29_ulhSkFZAVr56aDzaYXrgZKRdYZ71eanfcwXb8OekJ1AVnP1ABb3WqtQRVp5Q&usqp=CAU");
+  background-size: cover;
+}
+
+/* Direction Circles 50% */
+
+.circle--right:hover {
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--left:hover {
+  transform: translateX(50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--top:hover {
+  transform: translateY(50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--top-left:hover {
+  transform: translate(30%, 30%);
+  transition: transform 0.5s ease;
+}
+.circle--top-right:hover {
+  transform: translate(-30%, 30%);
+  transition: transform 0.5s ease;
+}
+
+.circle--bottom:hover {
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+
+.circle--bottom-right:hover {
+  transform: translate(-30%, -30%);
+  transition: transform 0.5s ease;
+}
+
+.circle--bottom-left:hover {
+  transform: translate(30%, -30%);
+  transition: transform 0.5s ease;
+}
+
+/* *Circles */
+
+/* FIX */
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #480e63;
+  border: 12px solid var(--c-white);
+  transition: transform 0.5s ease-in-out;
+}
+
+.circle-main {
+  display: flex;
+  background-color: var(--c-white);
+  border: 12px solid var(--c-bc);
+  max-height: 300px;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.circle-medium {
+  border: 12px solid #480e63;
+  background-color: #290148;
+  height: 200px;
+  width: 200px;
+  z-index: 2;
+  position: absolute;
+}
+
+.circle-main:active + .content {
+  transform: rotate(360deg);
+}
+
+.circle-medium:active + .content {
+  transform: rotate(360deg);
+}
