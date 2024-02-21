@@ -1,0 +1,19 @@
+//- *Elements
+include ./elements/index
+//- *Components
+include ./components/_index
+
+//- TODO 
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title pug
+    link(rel="stylesheet" href="./index.css")
+    link(rel="shortcut icon" href="./asstets-productly/favicon.ico" type="image/x-icon")
+  body
+    .app
+      +header
+      +banner
