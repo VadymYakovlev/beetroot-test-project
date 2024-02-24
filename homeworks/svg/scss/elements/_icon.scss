@@ -1,0 +1,64 @@
+/** Icon */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+
+  &-icon-megaphone {
+      width: 40px;
+      height: 40px;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+  
+    &-icon-building {
+      width: 40px;
+      height: 40px;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+  
+    &-icon-phone {
+      width: 40px;
+      height: 40px;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+  
+    &-icon-block {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      justify-content: center;
+      border: 1px solid lightgray;
+    }
+  
+    &-icon-instagram {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+  
+    &-icon-facebook-icon {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+  
+    &-icon-github {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+  
+    &-icon-dribbble {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+  
+    &-icon-twitter {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+}

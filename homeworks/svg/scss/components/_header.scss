@@ -1,0 +1,33 @@
+/* * Header */
+.header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  border: 1px solid lightgray;
+&-header-wrapper {
+    font-size: var(--c-title);
+    font-family: var(--f-free);
+    font-weight: var(--f-weight);
+    padding-bottom: 26px;
+    padding-top: 26px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 12px;
+  }
+&-wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+&-header-title {
+  font-family: var(--f-free);
+  font-size: var(--c-title);
+  font-weight: var(--f-weight);
+}
+
+}
+
+
