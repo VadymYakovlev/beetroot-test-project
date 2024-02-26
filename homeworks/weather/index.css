@@ -89,7 +89,7 @@
 }
 
 .weather-table .block:hover {
-  border-color: blue;
+  /* border-color: blue; */
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
