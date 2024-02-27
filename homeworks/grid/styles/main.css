@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: var(--c-primary);
+  /* min-height: 100vh; */
+}
+
+/* header {
+  font-size: 20px;
+} */
+
+a {
+  text-decoration: none;
+}
+
+/* p {
+  font-family: var(--f-free);
+} */

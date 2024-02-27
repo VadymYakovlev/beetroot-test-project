@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+
+  --c-primary: white;
+  --c-gray: #e0e0e0;
+  --c-title: #000000;
+
+  /* Fonts */
+  --ff-primary: Roboto;
+  --fs-base: 14px;
+  --fw-bolder: 500;
+  --fw-bold: 400;
+  --fs-title: 36px;
+
+  /* Stykes */
+  --f-style: Roboto;
+  --ff-title: Delius Unicase;
+}
