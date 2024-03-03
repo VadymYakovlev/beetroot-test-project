@@ -1,0 +1,28 @@
+/* **Global */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  height: 100vh;
+}
+
+p {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+}

@@ -1,0 +1,22 @@
+:root {
+  /* Colors */
+  --c-primary: white;
+  --c-wrapper: #f7f7f7;
+  --c-privacy: #969696;
+  --c--title: #1c1c1c;
+  --c-text: #545454;
+  --c-but: #007bff;
+  --c-line: #e4e4e4;
+  --c-radio: #e4e4e4;
+  --c-radio2: #b3d7ff;
+  /* Style */
+  --style-base: Roboto;
+  --ff-link: Inter;
+  /* Fonts */
+  --fs-base: 15px;
+  --fs-title: 24px;
+  --fw-title: 500;
+  --fw-base: 400;
+  --fs-link: 12px;
+  --fs-sub: 14px;
+}

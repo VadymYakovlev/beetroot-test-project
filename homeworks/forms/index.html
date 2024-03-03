@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * Title -->
+    <title>Forms</title>
+    <!-- * Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * Styles -->
+    <!-- Variables -->
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- Main  -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/forms.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <a href="../../index.html">HOME</a>
+    <!--* Wrapper -->
+    <div class="wrapper">
+      <form method="post">
+        <!-- ** Blocks -->
+        <div class="blocks">
+          <!-- * Block-Account -->
+          <div class="block-container">
+            <p class="block-title">Create an Account</p>
+            <!-- First Name/Last Name -->
+            <div class="block-input">
+              <div class="block-item">
+                <label>
+                  <span>First Name</span>
+                  <input
+                    class="input-row"
+                    required
+                    type="text"
+                    name="firstname"
+                  />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+              <div class="block-item">
+                <label>
+                  <span>Last Name</span>
+                  <input
+                    class="input-row"
+                    required
+                    type="text"
+                    name="lastname"
+                  />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="block-item-email">
+              <label>
+                <div>Email</div>
+                <input
+                  class="input-row-email"
+                  required
+                  type="text"
+                  name="email"
+                />
+                <p class="input-subtext">
+                  We'll never share your email with anyone else.
+                </p>
+              </label>
+            </div>
+            <!-- Radio -->
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-one"
+                name="gender"
+                value="male"
+              />
+              <label for="color-one">Male</label>
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-two"
+                name="gender"
+                value="female"
+              />
+              <label for="color-two">Female</label>
+            </div>
+            <!--  Country -->
+            <div class="block-input-country">
+              <div class="block-item">
+                <label>
+                  <div>Country</div>
+                  <select class="input-row" name="country" placeholder="Select">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="1">Austria</option>
+                    <option value="2">Bulgary</option>
+                    <option value="3">Columbia</option>
+                    <option value="4">Denmark</option>
+                    <option value="5">France</option>
+                    <option value="6">Germany</option>
+                    <option value="7">Italy</option>
+                    <option value="8">Poland</option>
+                    <option value="9">Turkey</option>
+                    <option value="10">Ukraine</option>
+                  </select>
+                </label>
+              </div>
+              <div class="block-item">
+                <label>
+                  <span>City</span>
+                  <input class="input-row" required type="text" name="city" />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+            </div>
+            <!-- Button -->
+            <button class="button" type="submit">
+              <span>Sigh Up</span>
+            </button>
+            <!-- Block-Terms -->
+            <div class="block-terms">
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <a href="#" class="block-terms-link">Terms of Use</a>
+              and <a href="#" class="block-terms-link">Privacy Policy</a>
+            </div>
+            <!-- Block-line -->
+            <div class="block-line"></div>
+            <!-- Footer -->
+            <footer class="block-footer">
+              <div>
+                <span class="block-footer-item">Have an account? </span>
+                <a href="#" class="footer-link"> Log In</a>
+              </div>
+            </footer>
+          </div>
+          <!-- * Block-Profile -->
+          <div class="block-container">
+            <p class="block-title">Profile</p>
+            <div class="block-profile">
+              <div class="profile-icon">
+                <img class="icon" src="../assets/profile.jpg" alt="photo" />
+              </div>
+              <div class="block-profile-item">
+                <div class="profile profile-camera">
+                  <img src="../assets/camera.png" alt="camera" />
+                </div>
+                <div class="block-profile-subtext">Up to 1 MB (300x300 px)</div>
+              </div>
+              <div class="profile block-profile-trash">
+                <div class="profile-trash">
+                  <img src="../assets/trash.png" alt="trash" />
+                </div>
+              </div>
+            </div>
+            <!-- Name/Email -->
+            <div class="block-input">
+              <div class="block-item">
+                <label>
+                  <span>Name</span>
+                  <input class="input-row" required type="text" name="name" />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+              <div class="block-item">
+                <label>
+                  <span>Email</span>
+                  <input class="input-row" required type="text" name="email" />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+            </div>
+            <!--  Country/City -->
+            <div class="block-input-country-profile">
+              <div class="block-item">
+                <label>
+                  <div>Country</div>
+                  <select class="input-row" name="country" placeholder="Select">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="1">Austria</option>
+                    <option value="2">Bulgary</option>
+                    <option value="3">Columbia</option>
+                    <option value="4">Denmark</option>
+                    <option value="5">France</option>
+                    <option value="6">Germany</option>
+                    <option value="7">Italy</option>
+                    <option value="8">Poland</option>
+                    <option value="9">Turkey</option>
+                    <option value="10">Ukraine</option>
+                  </select>
+                </label>
+              </div>
+              <div class="block-item">
+                <label>
+                  <span>City</span>
+                  <input class="input-row" required type="text" name="city" />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+            </div>
+            <!-- ZipCode/Phone -->
+            <div class="block-input-zipcode">
+              <div class="block-item">
+                <label>
+                  <span>Zip Code</span>
+                  <input
+                    class="input-row"
+                    required
+                    type="text"
+                    name="zip code"
+                  />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+              <div class="block-item">
+                <label>
+                  <span>Phone Number</span>
+                  <input
+                    class="input-row"
+                    required
+                    type="text"
+                    name="phone number"
+                  />
+                  <div class="error">This is a required field.</div>
+                </label>
+              </div>
+            </div>
+            <!-- Button-Update -->
+            <button class="button-small" type="submit">
+              <span>Update</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
