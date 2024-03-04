@@ -30,11 +30,10 @@
     <a href="../../index.html">HOME</a>
     <!--* Wrapper -->
     <div class="wrapper">
-      <form method="get">
         <!-- ** Blocks -->
         <div class="blocks">
           <!-- * Block-Account -->
-          <div class="block-container">
+          <form method="get" class="block-container">
             <p class="block-title">Create an Account</p>
             <!-- First Name/Last Name -->
             <div class="block-input">
@@ -67,15 +66,12 @@
             <div class="block-item-email">
               <label>
                 <div>Email</div>
-                <input
-                  class="input-row-email"
-                  required
-                  type="text"
-                  name="email"
-                />
+                <input class="input-row-email" required type="text" name="email"/>
+                <p class="error">This is a required field.</p>
                 <p class="input-subtext">
                   We'll never share your email with anyone else.
                 </p>
+                
               </label>
             </div>
             <!-- Radio -->
@@ -144,9 +140,9 @@
                 <a href="#" class="footer-link"> Log In</a>
               </div>
             </footer>
-          </div>
+          </form>
           <!-- * Block-Profile -->
-          <div class="block-container">
+          <form class="block-container">
             <p class="block-title">Profile</p>
             <div class="block-profile">
               <div class="profile-icon">
@@ -243,9 +239,8 @@
             <button class="button-small" type="submit">
               <span>Update</span>
             </button>
-          </div>
+          </form>
         </div>
-      </form>
     </div>
   </body>
 </html>

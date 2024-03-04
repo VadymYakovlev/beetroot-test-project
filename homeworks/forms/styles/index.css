@@ -77,7 +77,6 @@
   font-family: var(--style-base);
   font-size: var(--fs-link);
   color: var(--c-privacy);
-  padding-top: 6px;
 }
 span {
   font-family: var(--style-base);
