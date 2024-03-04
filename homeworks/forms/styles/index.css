@@ -1,8 +1,8 @@
 .wrapper {
   margin: 0 auto;
-  background-color: var(--c-wrapper);
-  width: 1440px;
-  height: 700px;
+  /* background-color: var(--c-wrapper); */
+  /* width: 1440px;
+  height: 700px; */
 }
 
 /* * Blocks */
@@ -17,15 +17,17 @@
 .block-container {
   background-color: var(--c-primary);
   margin-top: 55px;
-  height: 590px;
-  width: 570px;
+  margin-left: 34px;
+  /* height: 590px; */
+  /* width: 570px; */
+
 }
 .block-title {
   /* font-family: Roboto; */
   font-weight: var(--fw-title);
   font-size: var(--fs-title);
   color: var(--c--title);
-  margin-left: 34px;
+  /* margin-left: 34px; */
   margin-top: 34px;
 }
 .block-input {
@@ -50,7 +52,7 @@
 }
 .block-item-email {
   justify-content: center;
-  margin-left: 32px;
+  /* margin-left: 32px; */
   height: 90px;
   width: 504px;
   left: 34px;
@@ -169,7 +171,7 @@ input {
   padding-right: 25px;
   padding-left: 25px;
   border-radius: 4px;
-  margin-left: 34px;
+  /* margin-left: 34px; */
   cursor: pointer;
   margin-top: 6px;
   width: 150px;
@@ -270,7 +272,7 @@ input {
   color: var(--c-privacy);
 }
 .profile-icon {
-  margin-left: 34px;
+  /* margin-left: 34px; */
   margin-top: 20px;
   height: 80px;
   width: 80px;
@@ -347,7 +349,7 @@ input {
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
   align-items: center;
-  padding-left: 34px;
+  /* padding-left: 16px; */
   display: flex;
   display: flex;
   height: 40px;
