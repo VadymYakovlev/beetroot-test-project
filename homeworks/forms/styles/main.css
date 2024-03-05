@@ -34,3 +34,9 @@ a {
   font-family: Inter;
   font-weight: 400;
 }
+
+/* test */
+
+.block-text {
+  padding-bottom: 10px;
+}
