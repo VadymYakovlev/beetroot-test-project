@@ -1,19 +1,19 @@
-
-
 1;
-
 let username = '';
-username = prompt("Привіт, як тебе звати?");
+username = prompt('Привіт, як тебе звати?');
 console.log(username);
 username = "Гарне ім'я";
-alert(username)
+alert(username);
 console.log(username);
 
 const YEAR = 2024;
-const dayOfBirhday = +prompt ("Ваша дата народження?");
-console.log( "Вік:", YEAR - dayOfBirhday);
+const dayOfBirhday = +prompt('Ваша дата народження?');
+console.log('Вік:', YEAR - dayOfBirhday);
 
 2;
+confirm('Бажаєте розрахувати периметр? ');
+console.log(confirm);
+
 const sideSquare = 'Периметр';
 const formula = 'Сторона * 4';
 
@@ -28,14 +28,17 @@ alert(sideSquare + ' ' + result);
 console.log(sideSquare, result);
 
 3;
+confirm('Розрахувати площу кола?');
+console.log(confirm);
+
 const discription = 'Площа кола';
-radius= '';
-radius = prompt("Вкажіть радіус кола");
+radius = '';
+radius = prompt('Вкажіть радіус кола');
 console.log(radius);
 
-const formulaCircle = (3.14*radius*radius);
-alert(discription + " " + formulaCircle)
-console.log( "Площа кола", formulaCircle);
+const formulaCircle = 3.14 * radius * radius;
+alert(discription + ' ' + formulaCircle);
+console.log('Площа кола', formulaCircle);
 
 4;
 text = 'Швидкість необхідна км/год';
