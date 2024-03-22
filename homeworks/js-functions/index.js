@@ -1,12 +1,14 @@
 import sumNum from './js/sumNum.js';
 import calcS from './js/calcS.js';
 import evclidNum from './js/evclidNum.js';
+import { errorNumber } from './js/error.js';
 
 // * Initailize
 
 sumNum();
 calcS();
 evclidNum();
+errorNumber();
 
 const homeworksFunctions = () => {
   // * Task 1. Напиши всі можливі варіанти створення функцій.
@@ -58,7 +60,7 @@ const homeworksFunctions = () => {
   // * Task 4. Напиши функцію, яка обчислює факторіал переданого їй числа.
 
   function factorial(n) {
-    if (typeof n !== 'number' || isNaN(n) || n < 0) {
+    if (errorNumber(n)) {
       throw new Error('Невірне значення!');
     }
 
