@@ -1,5 +1,6 @@
 // * Task 1. Створи масив «Список покупок». Кожен елемент масиву є об'єктом, який містить назву продукту, кількість і куплений він чи ні, ціну за одиницю товару, сума.
 // * 1.1 Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
+
 const shoppingList = [
   {
     product: 'Хліб',
@@ -46,6 +47,7 @@ function displayShoppingList(shoppingList) {
 displayShoppingList(shoppingList);
 
 // * 1.2 Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
+
 function getPurchasedProducts() {
   let purchasedProducts = shoppingList.filter((item) => item.buy);
   return purchasedProducts.map((item) => item.product).join(', ');
@@ -55,6 +57,7 @@ let purchasedItems = getPurchasedProducts();
 console.log('Придбано:', purchasedItems);
 
 // * Noraml Task 2.1 Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
+
 function removeProduct(list, productName) {
   const updatedList = list.filter((item) => item.product !== productName);
   return updatedList;
@@ -64,6 +67,7 @@ const shopList = removeProduct(shoppingList, 'Сир');
 console.log('Забрали Сир', shopList);
 
 // * 2.2 Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову. При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
+
 const newPurchase = {
   product: 'Молоко',
   buy: true,
@@ -89,6 +93,7 @@ const updatedShoppingList = addPurchase(shoppingList, newPurchase);
 console.log('Докупили молока:', updatedShoppingList);
 
 // * Max. Task 3.1 Підрахунок суми всіх продуктів (враховуючи кількість кожного) в списку.
+
 function calcTotal(shoppingList) {
   let total = 0;
   for (let item of shoppingList) {
@@ -139,56 +144,20 @@ function productsByTotal(shoppingList, list) {
 productsByTotal(shoppingList, 'down');
 productsByTotal(shoppingList, 'up');
 
-// * TODO Local. 2. Забрать модуль в хтмл
+// * Local.Storage shoppingList
 
-// const shoppingListToString = JSON.stringify(shoppingList)
-// localStorage.setItem(`list`, shoppingListToString)
-
-
-
-// const dataString = localStorage.getItem('list');
-// const data = JSON.parse(dataString);
-// console.log('data:', data);
-
-
-// * example
-
-// const products = {
-//   item: localStorage.getItem('products') ? JSON.parse(localStorage.getItem("products")):[],
-//   add: function (name) {
-//     this.items.push(name);
-//     localStorage.setItem('products', JSON.stringify(this.items))
-//   }
-// }
-
-// products.items
-// console.log(`products.items:`, products.items);
-
-// * example 2
-
-function saveShoppingListToLocalStorage(shoppingList) {
+function saveLocalStorage(shoppingList) {
   const shoppingListString = JSON.stringify(shoppingList);
-  localStorage.setItem('shoppingList', shoppingListString);
+  localStorage.setItem('List', shoppingListString);
 }
-
-// Функція для завантаження списку продуктів з localStorage
-function loadShoppingListFromLocalStorage() {
-  // Отримуємо рядок JSON з localStorage
-  const shoppingListString = localStorage.getItem('shoppingList');
-  // Перевіряємо, чи є дані
+function loadLocalStorage() {
+  const shoppingListString = localStorage.getItem('List');
   if (shoppingListString) {
-    // Парсимо рядок JSON у масив об'єктів
     return JSON.parse(shoppingListString);
   } else {
-    // Якщо немає даних, повертаємо порожній масив
     return [];
   }
 }
-
-
-// Збереження списку продуктів у localStorage при завантаженні сторінки
-saveShoppingListToLocalStorage(shoppingList);
-
-// Завантаження списку продуктів з localStorage при завантаженні сторінки
-const loadedShoppingList = loadShoppingListFromLocalStorage();
-console.log('Завантажений список продуктів:', loadedShoppingList);
+saveLocalStorage(shoppingList);
+const loadShoppingList = loadLocalStorage();
+console.log('loadShoppingList:', loadShoppingList);

@@ -1,6 +1,6 @@
 // * Task 1. Мінімум. Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску, середня швидкість, обсяг паливного баку, середня витрата палива на 100 км., водії),
 
-let myCar = {
+const myCar = {
   виробник: 'Ford',
   модель: 'Mustang',
   'рік випуску': 1969,
@@ -42,8 +42,8 @@ let myCar = {
 myCar.getInfoCar();
 
 // У разі подолання відстані в 500 км
-let distance = 500;
-let tripInfo = myCar.calculateTrip(distance);
+const distance = 500;
+const tripInfo = myCar.calculateTrip(distance);
 console.log('Загальний час подорожі:', tripInfo.totalTime.toFixed(1), 'год');
 console.log('Загальна кількість палива:', tripInfo.totalFuel, 'л');
 
@@ -76,7 +76,7 @@ console.log('Поточний час: ' + showTime(actualTime));
 
 // 2.2 Додати години +8 годин
 function updateHours(time, addedHours) {
-  let newHours = (time.hours + addedHours) % 24;
+  const newHours = (time.hours + addedHours) % 24;
   return {
     hours: newHours,
     minutes: time.minutes,
@@ -89,9 +89,9 @@ console.log('Додано +8 год:', actualTime);
 
 // 2.3 Додати  +30 хв
 function updateMinutes(time, addedMinutes) {
-  let newMinutes = (time.minutes + addedMinutes) % 60;
-  let addHours = Math.floor((time.minutes + addedMinutes) / 60);
-  let newHours = (time.hours + addHours) % 24;
+  const newMinutes = (time.minutes + addedMinutes) % 60;
+  const addHours = Math.floor((time.minutes + addedMinutes) / 60);
+  const newHours = (time.hours + addHours) % 24;
   return {
     hours: newHours,
     minutes: newMinutes,
@@ -107,9 +107,9 @@ function updateSeconds(time, addedSeconds) {
   let actualTimeInSeconds =
     time.hours * 3600 + time.minutes * 60 + time.seconds;
   actualTimeInSeconds += addedSeconds;
-  let newHours = Math.floor(actualTimeInSeconds / 3600) % 24;
-  let newMinutes = Math.floor((actualTimeInSeconds % 3600) / 60);
-  let newSeconds = actualTimeInSeconds % 60;
+  const newHours = Math.floor(actualTimeInSeconds / 3600) % 24;
+  const newMinutes = Math.floor((actualTimeInSeconds % 3600) / 60);
+  const newSeconds = actualTimeInSeconds % 60;
   return {
     hours: newHours,
     minutes: newMinutes,
@@ -122,40 +122,40 @@ console.log('Додано +15 сек:', actualTime);
 
 // * Task 3. Створи об'єкт, що описує звичайний дріб. Створи об'єкт, який має методи роботи з дробом:
 /// 3.1 *Додавання
-let dribOne = {
+const dribOne = {
   x: 2,
   y: 3,
 };
-let dribTwo = {
+const dribTwo = {
   x: 1,
   y: 4,
 };
 
 function addDrib(dribOne, dribTwo) {
-  let comY = dribOne.y * dribTwo.y;
-  let newX = dribOne.x * dribTwo.y + dribTwo.x * dribOne.y;
+  const comY = dribOne.y * dribTwo.y;
+  const newX = dribOne.x * dribTwo.y + dribTwo.x * dribOne.y;
   return {
     x: newX,
     y: comY,
   };
 }
-let addResult = addDrib(dribOne, dribTwo);
+const addResult = addDrib(dribOne, dribTwo);
 console.log('Результат додавання:', addResult.x + '/' + addResult.y);
 
 /// 3.2 Віднімання
 function minusDrib(dribOne, dribTwo) {
-  let comY = dribOne.y * dribTwo.y;
-  let newX = dribOne.x * dribTwo.y - dribTwo.x * dribOne.y;
+  const comY = dribOne.y * dribTwo.y;
+  const newX = dribOne.x * dribTwo.y - dribTwo.x * dribOne.y;
   return {
     x: newX,
     y: comY,
   };
 }
-let minResult = minusDrib(dribOne, dribTwo);
+const minResult = minusDrib(dribOne, dribTwo);
 console.log('Результат віднімання:', minResult.x + '/' + minResult.y);
 
 // 3.3 Ділення
-let multiplyResult = multiplyDrib(dribOne, { x: dribTwo.y, y: dribTwo.x });
+const multiplyResult = multiplyDrib(dribOne, { x: dribTwo.y, y: dribTwo.x });
 console.log('Результат ділення:', multiplyResult.x + '/' + multiplyResult.y);
 
 // 3.4 Множення та скорочення
@@ -169,11 +169,11 @@ function multiplyDrib(dribOne, dribTwo) {
     }
     return НСД(b, a % b);
   }
-  let ncd = НСД(x, y);
+  const ncd = НСД(x, y);
   x /= ncd;
   y /= ncd;
   return { x, y };
 }
 
-let result = multiplyDrib(dribOne, dribTwo);
+const result = multiplyDrib(dribOne, dribTwo);
 console.log('Результат множення:', result.x + '/' + result.y);
