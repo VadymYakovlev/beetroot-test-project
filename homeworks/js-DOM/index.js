@@ -46,6 +46,7 @@ if (DOMList) {
     li.style.fontFamily = 'Best Rock';
     li.style.fontSize = '18px';
     li.style.padding = '12px';
+    document.body.style.background = "black"
   };
 
   playlist.forEach((item) => addItemToList(item.author, item.song));
