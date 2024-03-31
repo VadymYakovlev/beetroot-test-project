@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS event</title>
+    <!-- * Styles -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <form method="post" id="js-form">
+        <h1>Registration</h1>
+        <label>
+          <div>Firstname</div>
+          <input type="text" name="firstname" />
+          <div class="error" id="js-form-firstname-error"></div>
+        </label>
+        <label>
+          <div>Lastname</div>
+          <input type="text" name="lastname" />
+          <div class="error" id="js-form-lastname-error"></div>
+        </label>
+
+        <label>
+          <div>Email</div>
+          <input type="email" name="email" />
+          <div class="error" id="js-form-email-error"></div>
+        </label>
+
+        <label>
+          <div>City</div>
+          <input type="text" name="city" />
+          <div class="error" id="js-form-city-error"></div>
+        </label>
+
+        <button type="submit">
+          <span>Submit</span>
+        </button>
+      </form>
+    </div>
+    <!-- * Scripts -->
+    <script type="module" defer src="./index.js"></script>
+  </body>
+</html>

@@ -42,11 +42,11 @@ if (DOMList) {
     span.innerText = `author: ${author}, song: ${song}`;
     li.appendChild(span);
     DOMList.appendChild(li);
-    DOMList.style.color = 'green';
+    DOMList.style.color = 'black';
     li.style.fontFamily = 'Best Rock';
     li.style.fontSize = '18px';
     li.style.padding = '12px';
-    document.body.style.background = "black"
+    li.style.fontWeight = 'bold';
   };
 
   playlist.forEach((item) => addItemToList(item.author, item.song));

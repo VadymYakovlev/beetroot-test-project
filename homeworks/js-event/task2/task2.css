@@ -1,0 +1,14 @@
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 4px;
+}
+th {
+  cursor: pointer;
+}
+th:hover {
+  background: lightgreen;
+}

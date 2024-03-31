@@ -1,0 +1,47 @@
+/* **Global */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+padding: 20px;
+}
+/* 
+p {
+  color: white;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+
+
+.block-text {
+  padding-bottom: 10px;
+} */
+
+label {
+  display: block;
+}
+
+.error {
+  color: red;
+  height: 15px;
+  font-size: 12px;
+}
