@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Пошук відділень Нова Пошта</h1>
+      <form id="search-form">
+        <label for="settlement-input">Введіть назву міста:</label>
+        <input type="text" id="settlement-input" required />
+        <button type="submit">
+          <span>НАДІСЛАТИ ЗАПИТ</span>
+        </button>
+        <ul class="main-cities">
+          <a href="#" id="kiyv-link">Київ</a>
+          <a href="#" id="kharkiv-link">Харків</a>
+          <a href="#" id="odesa-link">Одеса</a>
+          <a href="#" id="lviv-link">Львів</a>
+          <a href="#" id="franik-link">Івано-Франківськ</a>
+        </ul>
+      </form>
+      <ul id="results"></ul>
+    </div>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
