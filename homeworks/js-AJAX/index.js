@@ -44,7 +44,7 @@ const displayResults = (postOffices) => {
 const displayError = () => {
   const resultsList = document.getElementById('results');
   resultsList.innerHTML =
-    '<li>Не знайдено жодного відділення за даною назвою населеного пункту</li>';
+    'Не знайдено жодного відділення за даною назвою населеного пункту';
 };
 
 const Submit = (event) => {
