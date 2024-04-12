@@ -7,11 +7,9 @@ import React from 'react';
 import './styles/normalize.css';
 import './styles/index.css';
 
-// *Render
+// * Render
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-{/* <App></App> */}
